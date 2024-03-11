@@ -1,0 +1,5 @@
+curl --location 'http://localhost:8091/data-migration/api/v1/ingestion' \
+--header 'Content-Type: application/json' \
+--data '{
+    "source": "HTTPS",
+    "dataSourceUrl": "https://raw.githubusercontent.com/apache/airflow/main/docs/apache-airflow/tutorial/pipeline_example.csv"
